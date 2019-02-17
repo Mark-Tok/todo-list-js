@@ -1,0 +1,174 @@
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #dddcdc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #dddcdc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #dddcdc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #dddcdc;
+}
+
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+body {
+    background-image: url(../img/abstractdesktop-astounding-wood-background-wallpaper-backgrounds.jpg);
+    background-size: cover;
+}
+
+.check {
+  color: red;
+  text-decoration: line-through;
+  list-style: none;
+}
+
+.item:before {
+    content: "";
+    position: absolute;
+    margin-left: -31px;
+    border: 2px solid #007aea;
+    width: 17px;
+    height: 19px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    top:4px;
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    margin-left: -31px;
+    border: 1px solid #9e9e9e;
+    width: 17px;
+    height: 19px;
+    text-align: center;
+    background-image: url(../img/tick.png);
+    background-repeat: no-repeat;
+    background-position-y: 2px;
+    background-position-x: 1px;
+    top:4px;
+}
+
+li.item {
+    list-style: none;
+    background: white;
+    position: relative;
+}
+
+ul#todo button {
+  position: absolute;
+}
+
+ul#done button {
+  position: absolute;
+  right: 11px;
+}
+
+ul#todo,
+ul#done {
+  position: relative;
+  width: 91%;
+  display: inline-block;
+}
+
+button.edit {
+  right: 72px !important;
+}
+
+li.item input {
+    position: absolute;
+    opacity: 0;
+    border: 2px solid #36f497;
+    padding: 5px;
+    left: 7px;
+    top: 2px;
+}
+
+button.change {
+    right: 86px;
+    top: 5px;
+}
+li.check input {
+  margin-left: -19px;
+  opacity: 0;
+}
+
+button.save {
+
+    display: none;
+    background-image: url(../img/checked.png);
+    width: 31px;
+    height: 29px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 4px;
+    left: 197px;
+
+}
+
+button.cansel {
+
+    display: none;
+    background-image: url(../img/cancel.png);
+    width: 31px;
+    height: 29px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    left: 229px;
+    top: 4px;
+
+}
+
+.todo_container {
+    width: 35%;
+    margin: 0 auto;
+    padding: 10px;
+    background: #ffffff47;
+}
+
+h1 {
+    text-align: center;
+    background: #eaea00;
+    padding: 15px;
+}
+
+.input_text {
+    width: 85%;
+    height: 33px;
+    font-size: 20px;
+    border: 4px solid #dddcdc;
+        color: #a2a0a0;
+}
+
+button.item1 {
+    display: inline-block;
+    background: none;
+    border: 0px;
+    height: 43px;
+    cursor: pointer;
+}
+.todo_event {
+    display: flex;
+    margin-top: -22px;
+    background: #dddcdc;
+    
+}
+button.remove {
+    right: 9px;
+    top: 5px;
+}
+
+span.content {
+    width: 100%;
+    display: inline-block;
+    padding: 7px;
+}
